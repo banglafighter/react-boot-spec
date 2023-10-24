@@ -1,4 +1,3 @@
-import React from "react";
 import PFBSReactComponent, {BootstrapUIState} from "./common/spec-common-things";
 
 export interface DropdownProps {

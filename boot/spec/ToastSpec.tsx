@@ -1,5 +1,4 @@
-import React from "react";
-import PFBSReactComponent, {BootstrapUIState} from "./common/spec-common-things";
+import BootstrapReactComponent, {BootstrapUIState} from "./common/spec-common-things";
 
 export type DisplayPosition = 'topCenter' | 'topLeft' | 'topRight' | 'bottomCenter' | 'bottomLeft' | 'bottomRight'
 export type MessageType = 'success' | 'error' | 'warning' | 'info'
@@ -13,4 +12,4 @@ export interface ToastProps {
 }
 
 
-export default class ToastSpec<P extends ToastProps, S extends BootstrapUIState> extends PFBSReactComponent<P, S> {}
+export default class ToastSpec<P extends ToastProps, S extends BootstrapUIState> extends BootstrapReactComponent<P, S> {}

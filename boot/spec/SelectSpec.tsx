@@ -1,7 +1,6 @@
-import React from "react";
 import {CommonAttributes} from "./common/common-attrs";
 import {FieldCommonProps, FieldWrappingProps} from "./InputSpec";
-import PFBSReactComponent, {BootstrapUIState} from "./common/spec-common-things";
+import BootstrapReactComponent, {BootstrapUIState} from "./common/spec-common-things";
 
 export interface SelectProps extends FieldWrappingProps, CommonAttributes, FieldCommonProps {
     isMulti?: boolean
@@ -14,4 +13,4 @@ export interface SelectProps extends FieldWrappingProps, CommonAttributes, Field
 }
 
 
-export default class SelectSpec<P extends SelectProps, S extends BootstrapUIState> extends PFBSReactComponent<P, S> {}
+export default class SelectSpec<P extends SelectProps, S extends BootstrapUIState> extends BootstrapReactComponent<P, S> {}

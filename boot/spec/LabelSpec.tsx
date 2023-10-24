@@ -1,4 +1,4 @@
-import React from "react";
+import {React} from "react-rapid-app";
 import PFBSReactComponent, {BootstrapUIState} from "./common/spec-common-things";
 
 export interface LabelProps extends React.HTMLAttributes<HTMLLabelElement> {}
