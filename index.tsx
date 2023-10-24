@@ -1,12 +1,9 @@
 import BootstrapReactComponent, { BootstrapUIState } from "./boot/spec/common/spec-common-things"
 import AccordionSpec, {AccordionBody, AccordionHeader, AccordionItem, AccordionProps } from "./boot/spec/AccordionSpec"
 import CommonUtil from "./boot/spec/common/common-util"
-import CardContentProps from "./boot/spec/card/CardContentSpec"
-import CardFooterProps from "./boot/spec/card/CardFooterSpec"
-import CardHeaderProps from "./boot/spec/card/CardHeaderSpec"
-import CardFooterSpec from "./boot/spec/card/CardFooterSpec"
-import CardContentSpec from "./boot/spec/card/CardContentSpec"
-import CardHeaderSpec from "./boot/spec/card/CardHeaderSpec"
+import CardFooterSpec, { CardFooterProps } from "./boot/spec/card/CardFooterSpec"
+import CardContentSpec, { CardContentProps } from "./boot/spec/card/CardContentSpec"
+import CardHeaderSpec, { CardHeaderProps } from "./boot/spec/card/CardHeaderSpec"
 import {Align, Color, PrimeColor, Size, VariousSize} from "./boot/spec/common/common-type"
 import {CommonAttributes, CommonEvent} from "./boot/spec/common/common-attrs"
 import ButtonSpec, { ButtonProps } from "./boot/spec/ButtonSpec"
@@ -22,6 +19,19 @@ import SelectSpec, { SelectProps } from "./boot/spec/SelectSpec"
 import TextFieldSpec, { TextFieldProps } from "./boot/spec/TextFieldSpec"
 import ToastSpec, {DisplayPosition, MessageType, ToastProps } from "./boot/spec/ToastSpec"
 import CardSpec, { CardProps } from "./boot/spec/card/CardSpec"
+
+import DialogSpec, { DialogProps } from "./boot/spec/dialog/DialogSpec"
+import DialogContentSpec, { DialogContentProps } from "./boot/spec/dialog/DialogContentSpec"
+import DialogFooterSpec, { DialogFooterProps } from "./boot/spec/dialog/DialogFooterSpec"
+import DialogHeaderSpec, { DialogHeaderProps } from "./boot/spec/dialog/DialogHeaderSpec"
+
+import DynamicTableHeadSpec, {DynamicTableHeadColumn, DynamicTableHeadProps, SortDirection } from "./boot/spec/table/DynamicTableHeadSpec"
+import TableBodySpec, { TableBodyProps } from "./boot/spec/table/TableBodySpec"
+import TableCellSpec, { TableCellProps } from "./boot/spec/table/TableCellSpec"
+import TableHeadCellSpec, { TableHeadCellProps } from "./boot/spec/table/TableHeadCellSpec"
+import TableHeadSpec, { TableHeadProps } from "./boot/spec/table/TableHeadSpec"
+import TableRowSpec, { TableRowProps } from "./boot/spec/table/TableRowSpec"
+import TableSpec, { TableProps, Variant } from "./boot/spec/table/TableSpec"
 
 export type {
     BootstrapUIState,
@@ -57,6 +67,20 @@ export type {
     ToastProps,
     DisplayPosition,
     MessageType,
+    DialogProps,
+    DialogContentProps,
+    DialogFooterProps,
+    DialogHeaderProps,
+    DynamicTableHeadProps,
+    DynamicTableHeadColumn,
+    TableBodyProps,
+    TableCellProps,
+    TableHeadCellProps,
+    SortDirection,
+    TableHeadProps,
+    TableRowProps,
+    TableProps,
+    Variant,
 }
 
 export {
@@ -79,4 +103,15 @@ export {
     SelectSpec,
     TextFieldSpec,
     ToastSpec,
+    DialogSpec,
+    DialogContentSpec,
+    DialogFooterSpec,
+    DialogHeaderSpec,
+    DynamicTableHeadSpec,
+    TableBodySpec,
+    TableCellSpec,
+    TableHeadCellSpec,
+    TableHeadSpec,
+    TableRowSpec,
+    TableSpec,
 }
