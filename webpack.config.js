@@ -61,7 +61,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'pf-boot-spec',
+            title: 'Rapid-boot-spec',
             chunksSortMode: 'none',
             template: './index.html',
             minify: true

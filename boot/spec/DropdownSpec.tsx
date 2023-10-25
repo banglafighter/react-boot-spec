@@ -1,4 +1,4 @@
-import PFBSReactComponent, {BootstrapUIState} from "./common/spec-common-things";
+import RapidBSReactComponent, {BootstrapUIState} from "./common/spec-common-things";
 
 export interface DropdownProps {
     itemList: Array<any>
@@ -14,4 +14,4 @@ export interface DropdownProps {
 }
 
 
-export default class DropdownSpec<P extends DropdownProps, S extends BootstrapUIState> extends PFBSReactComponent<P, S> {}
+export default class DropdownSpec<P extends DropdownProps, S extends BootstrapUIState> extends RapidBSReactComponent<P, S> {}
