@@ -66,4 +66,5 @@ export interface FieldWrappingProps {
     afterInput?: any
     wrapperClass?: string
     addWrapperClass?: string
+    isHideInput?: boolean
 }
