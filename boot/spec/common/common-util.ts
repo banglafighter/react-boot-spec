@@ -23,6 +23,19 @@ export default class CommonUtil {
         return id
     }
 
+    public static addAllowedAttrs(props: any) {
+        let attrs = {}
+        let allowedAttrs = ["style"]
+        allowedAttrs.forEach((attr: any) => {
+                if (props[attr]) {
+                    console.log(props[attr])
+                    attrs = {...attrs, ...props[attr]}
+                }
+            }
+        )
+        return attrs
+    }
+
     public static addClassName(props: any, className = "") {
         if (props.className) {
             className += " " + props.className
