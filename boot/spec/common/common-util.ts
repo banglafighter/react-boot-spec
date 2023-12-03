@@ -28,7 +28,6 @@ export default class CommonUtil {
         let allowedAttrs = ["style"]
         allowedAttrs.forEach((attr: any) => {
                 if (props[attr]) {
-                    console.log(props[attr])
                     attrs = {...attrs, ...props[attr]}
                 }
             }
