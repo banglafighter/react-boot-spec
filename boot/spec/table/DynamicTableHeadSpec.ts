@@ -5,7 +5,7 @@ import BootstrapReactComponent, {BootstrapUIState} from "../common/spec-common-t
 export type SortDirection = 'asc' | 'desc'
 
 export interface DynamicTableHeadColumn extends CommonAttributes {
-    displayName?: string
+    displayName?: any
     fieldName?: string
     isSortAble?: boolean
     isActionColumn?: boolean
