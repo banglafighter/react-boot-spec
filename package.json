@@ -1,12 +1,13 @@
 {
   "name": "react-boot-spec",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": false,
   "dependencies": {
-    "react": "^17.0.2",
-    "typescript": "^4.6.2"
+    "react": "^18.1.0",
+    "typescript": "^5.5.4"
   },
   "scripts": {
+    "npm-pub": "tsup && npm publish"
   },
   "eslintConfig": {
     "extends": [
@@ -14,13 +15,21 @@
     ]
   },
   "devDependencies": {
-    "file-loader": "^6.2.0",
     "css-loader": "^6.4.0",
+    "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.4.0",
     "style-loader": "^3.3.0",
     "ts-loader": "^9.2.6",
+    "@swc/core": "^1.7.22",
+    "tsup": "^8.2.4",
     "webpack": "^5.58.2",
     "webpack-cli": "^4.9.1",
     "webpack-dev-server": "^4.3.1"
-  }
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ]
 }
