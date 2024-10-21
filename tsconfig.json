@@ -23,5 +23,9 @@
   "include": [
     "boot",
     "tdef"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
   ]
 }
