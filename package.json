@@ -1,6 +1,6 @@
 {
   "name": "react-boot-spec",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "scripts": {
     "watch": "tsc -w",
     "prepublishOnly": "node prepublish.js && tsc",
