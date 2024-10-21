@@ -19,4 +19,5 @@ node_modules
 *.lock
 *.log
 .vscode
+package-lock.json
 
