@@ -1,13 +1,10 @@
 {
   "name": "react-boot-spec",
   "version": "0.0.2",
-  "private": false,
-  "dependencies": {
-    "react": "^18.1.0",
-    "typescript": "^5.5.4"
-  },
   "scripts": {
-    "npm-pub": "tsup && npm publish"
+    "watch": "tsc -w",
+    "prepublishOnly": "node prepublish.js && tsc",
+    "release": "cross-env RELEASE_MODE=true np --no-tests --branch release-test"
   },
   "eslintConfig": {
     "extends": [
@@ -15,11 +12,15 @@
     ]
   },
   "devDependencies": {
+    "cross-env": "^7.0.3",
     "css-loader": "^6.4.0",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.4.0",
+    "np": "^10.0.7",
+    "react": "^18.1.0",
     "style-loader": "^3.3.0",
     "ts-loader": "^9.2.6",
+    "typescript": "^5.6.3",
     "webpack": "^5.58.2",
     "webpack-cli": "^4.9.1",
     "webpack-dev-server": "^4.3.1"
