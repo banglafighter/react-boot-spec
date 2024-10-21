@@ -10,7 +10,7 @@ import ButtonSpec, { ButtonProps } from "./boot/spec/ButtonSpec"
 import ColumnSpec, { ColumnProps } from "./boot/spec/ColumnSpec"
 import ContainerSpec, { ContainerProps } from "./boot/spec/ContainerSpec"
 import DropdownSpec, { DropdownProps } from "./boot/spec/DropdownSpec"
-import InputSpec, {FieldCommonProps, InputCommonProps, InputProps, ToggleInputProps } from "./boot/spec/InputSpec"
+import InputSpec, {FieldCommonProps, InputCommonProps, InputProps, ToggleInputProps, InputType} from "./boot/spec/InputSpec"
 import LabelSpec, { LabelProps } from "./boot/spec/LabelSpec"
 import LoadingIndicatorSpec, { LoadingIndicatorProps } from "./boot/spec/LoadingIndicatorSpec"
 import PaginationSpec, { PaginationProps } from "./boot/spec/PaginationSpec"
@@ -58,6 +58,7 @@ export type {
     InputProps,
     ToggleInputProps,
     FieldCommonProps,
+    InputType,
     LabelProps,
     LoadingIndicatorProps,
     PaginationProps,
