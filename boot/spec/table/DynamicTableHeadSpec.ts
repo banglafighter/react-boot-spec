@@ -8,6 +8,8 @@ export interface DynamicTableHeadColumn extends CommonAttributes {
     displayName?: any
     fieldName?: string
     isSortAble?: boolean
+    isIgnoreHeader?: boolean
+    isIgnoreBody?: boolean
     isActionColumn?: boolean
 }
 
