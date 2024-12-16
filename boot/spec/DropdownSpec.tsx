@@ -10,6 +10,7 @@ export interface DropdownProps {
     wrapperId?: string
     itemClassName?: string
     itemId?: string
+    enableSelectValue?: boolean
     itemOnClick?: (clickedItem: any, index: any, itemList: any) => any;
 }
 
