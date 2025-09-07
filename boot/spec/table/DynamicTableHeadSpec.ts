@@ -11,6 +11,7 @@ export interface DynamicTableHeadColumn extends CommonAttributes {
     isIgnoreHeader?: boolean
     isIgnoreBody?: boolean
     isActionColumn?: boolean
+    actionColumnWidth?: string
 }
 
 export interface DynamicTableHeadProps {
